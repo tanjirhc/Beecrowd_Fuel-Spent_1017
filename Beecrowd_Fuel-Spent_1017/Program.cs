@@ -11,12 +11,12 @@ namespace Beecrowd_Fuel_Spent_1017
         static void Main(string[] args)
         {
             int hours, velocity;
-            double combustivel = 12.0;
+            double distancePerLitre = 12.0;
 
             hours = int.Parse(Console.ReadLine());
             velocity = int.Parse(Console.ReadLine());
 
-            double total = (velocity * hours) / combustivel;
+            double total = (velocity * hours) / distancePerLitre;
 
             string med1 = string.Format("{0:00.000}", total);
             Console.WriteLine(med1);
